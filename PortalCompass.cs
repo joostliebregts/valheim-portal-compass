@@ -25,7 +25,7 @@ namespace Finn.PortalCompass;
 public sealed class Plugin : BaseUnityPlugin
 {
     public const string Id = "com.joostliebregts.portalpicker";   // kept from the Portal Picker days: config, pins and settings stay
-    public const string Version = "0.4.1";
+    public const string Version = "1.0.0";
     public const string XPortalGuid = "yay.spikehimself.xportal";
 
     const float W = 980f, H = 720f, Pad = 20f, ContentTop = 156f, BottomBar = 72f, RowH = 40f, CompactH = 32f, FontScale = 1.15f;
