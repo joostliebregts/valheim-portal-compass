@@ -1,0 +1,8 @@
+bin/
+obj/
+local.props
+*.zip
+package/plugins/
+package/README.md
+package/CHANGELOG.md
+package/LICENSE

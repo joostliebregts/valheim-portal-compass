@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Build paths: copy these two lines into a local.props next to this file (it is imported below), or pass them on the
+       command line: dotnet build -p:GameDir=... -p:ProfileDir=...
+       GameDir    = the Valheim install folder (has valheim_Data/Managed)
+       ProfileDir = a folder with BepInEx/core (BepInEx.dll, 0Harmony.dll), e.g. a Gale or r2modman profile -->
+  <Import Project="local.props" Condition="Exists('local.props')" />
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>PortalCompass</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <Target Name="CheckPaths" BeforeTargets="ResolveAssemblyReferences" Condition="'$(GameDir)' == '' Or '$(ProfileDir)' == ''">
+    <Error Text="Set GameDir and ProfileDir (local.props or -p:GameDir=... -p:ProfileDir=...). See PortalCompass.csproj." />
+  </Target>
+  <ItemGroup>
+    <Compile Include="PortalCompass.cs" />
+    <Reference Include="$(GameDir)/valheim_Data/Managed/*.dll" Exclude="$(GameDir)/valheim_Data/Managed/mscorlib.dll;$(GameDir)/valheim_Data/Managed/netstandard.dll;$(GameDir)/valheim_Data/Managed/System*.dll" Private="false" />
+    <Reference Include="$(ProfileDir)/BepInEx/core/BepInEx.dll" Private="false" />
+    <Reference Include="$(ProfileDir)/BepInEx/core/0Harmony.dll" Private="false" />
+    <!-- No reference to XPortal.dll: everything of XPortal (GPL-3.0, SpikeHimself) is reached through reflection, so this
+         mod can load before XPortal (ScriptEngine at game start). -->
+  </ItemGroup>
+</Project>
