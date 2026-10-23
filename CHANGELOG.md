@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.1 (2026-10-23)
+- README: the map screenshot comes first. No change in the mod.
+
 ## 1.0.0 (2026-10-23)
 - First release on Thunderstore. Search, pins, recent portals, an A-Z list with a letter rail, and a map of your explored world with portal names and friends who share their position. Right-click a portal to pin, ping or link; double-click to link at once.
 

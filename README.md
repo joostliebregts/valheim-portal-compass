@@ -4,7 +4,7 @@ Portal Compass replaces the destination list of [XPortal](https://github.com/Spi
 
 XPortal does the linking, the saving and the server sync. Portal Compass changes only how you choose the destination. Your portal links do not change. When you remove Portal Compass, the XPortal list comes back.
 
-![The Quick tab: pinned, recent and nearest portals](https://raw.githubusercontent.com/joostliebregts/valheim-portal-compass/main/screenshots/1-quick.png)
+![The Map tab: your explored map with a dot for each portal](https://raw.githubusercontent.com/joostliebregts/valheim-portal-compass/main/screenshots/3-map.png)
 
 ## Requirements
 
@@ -21,6 +21,8 @@ Go to a portal and open it (E). The Portal Compass panel opens.
 
 **Quick.** This tab shows your pinned portals, your recent portals and the nearest portals. Push 1 to 6 to select a pinned portal.
 
+![The Quick tab: pinned, recent and nearest portals](https://raw.githubusercontent.com/joostliebregts/valheim-portal-compass/main/screenshots/1-quick.png)
+
 **List.** This tab shows all portals. Sort them by name, recent, pinned or distance. Use the letters on the right side to go to a letter.
 
 ![The List tab: all portals A to Z, with the letters on the right side](https://raw.githubusercontent.com/joostliebregts/valheim-portal-compass/main/screenshots/2-list.png)
@@ -30,8 +32,6 @@ Go to a portal and open it (E). The Portal Compass panel opens.
 - Click a dot to select the portal.
 - Turn the mouse wheel to zoom.
 - Drag to move the map.
-
-![The Map tab: your explored map with a dot for each portal](https://raw.githubusercontent.com/joostliebregts/valheim-portal-compass/main/screenshots/3-map.png)
 
 **Link.** Select a portal and push Link. Or double-click the portal. The panel closes. Then go through the portal.
 
